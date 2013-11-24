@@ -1,0 +1,37 @@
+{>layout/}
+{<content}
+	Hi, I'm the home page!
+
+	<p>
+		here's a list: {list}
+	</p>
+
+	<p>
+		Ok, how about a list of users::
+		<ul id="users">
+		{#users}
+			<li>{$idx}: {> "partials/user-badge" /}</li>
+		{/users}
+		</ul>
+
+	</p>
+
+	<button id="addmore">Add more?</button>
+
+	<p>
+		Now let's try some stuff:
+		<pre>{~lb}>insert partial{~rb}</pre>
+ 		This inserts a partial which has been defined elsewhere.  Similar to both '{~lb}extends{~rb}' and '{~lb}include{~rb}' in Smarty.
+		
+		<pre>{~lb}+block{~rb}</pre>
+ 		This defines a block which may be overwritten.  Like '{~lb}block{~rb}' in Smarty in a base template.
+		
+		<pre>{~lb}&lt;define partial{~rb}</pre>
+		 This defines the content for a partial or a block.  Kinda like... '{~lb}block{~rb}' in Smarty subtemplate.  <em>Or<em>, like giving section of template it's own name, by which it can be included.
+	</p>
+
+{/content}
+{<footer}
+<script src="/js/index.js" type="text/javascript"></script>
+<script src="/templates/index.js" type="text/javascript"></script>
+{/footer}

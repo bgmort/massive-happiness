@@ -1,0 +1,21 @@
+{
+  "name": "testproj",
+  "version": "0.0.0",
+  "description": "it's a test.  makefile, dustjs, typescript?",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": "http://merc.footnote.com/testproj",
+  "private": true,
+  "author": "Fold3",
+  "dependencies": {
+    "express": "~3.4.4",
+    "preprocess": "~2.0.0",
+    "preprocessor": "~1.1.0",
+    "dustjs-linkedin": "~2.2.0",
+    "express-dust": "~0.1.5",
+    "consolidate": "~0.9.1",
+    "shelljs": "~0.2.6"
+  }
+}

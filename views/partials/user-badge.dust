@@ -1,0 +1,5 @@
+<div class="user">
+	<img src="http://lorempixel.com/100/100/sports/{name}">
+	<h3>{name}</h3>
+	<p>{info}</p>
+</div>
