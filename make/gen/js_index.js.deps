@@ -1,0 +1,2 @@
+build/js/index.js : src/js/index.js src/js/newguy.js
+	$(call PREPROCESS,$<,$@)

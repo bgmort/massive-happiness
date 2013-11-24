@@ -1,0 +1,2 @@
+build/js/test1.js : src/js/test1.js src/js/test2.js src/js/test3.js
+	$(call PREPROCESS,$<,$@)

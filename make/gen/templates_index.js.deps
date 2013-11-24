@@ -1,0 +1,2 @@
+build/templates/index.js : views/client/index.js views/partials/user-badge.js
+	$(call PREPROCESS,$<,$@)
